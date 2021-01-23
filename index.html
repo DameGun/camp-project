@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Буст аккаунтов</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header >
+            <div class="nav">
+                <div class="container">
+                    <h1 class="logo"><a href="#">Stager</a></h1>
+                    
+                </div>
+
+                <div class="container">
+                    <a href="#">
+                        <ul class="socials_btn">
+                            <li>Связаться со мной
+                                <ul class="submenu">
+                                    <li class="vk_btn"><a href="https://vk.com/doromeichik">VKontakte</a></li>
+                                    <li class="inst_btn"><a href="https://www.instagram.com/doromeichikk/">Instagram</a></li>
+                                    <li class="tg_btn"><a href="https://t.me/doromeichikk">Telegram</a></li>
+                                    <li class="yt_btn"><a href="">YouTube</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="header_welcome">
+                <h1>Привет</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="main_block">
+                    <div class="container">
+                        <div class="block_name">
+                            <h1>Услуги</h1>
+                        </div>
+
+                        <div class="prices_block">
+                            <button type="button" class="prices">Буст World of Tanks<div id="down_triangle"></div></button>
+                                <div class="prices_desc">
+                                    <p>Фарм опыта 50.000 - 200 рублей</p>
+                                    <p>Боевой пропуск III сезон - от 500 рублей</p>
+                                    <p>Бои на WN8 - 500 рублей</p>
+                                </div>
+                            <button type="button" class="prices">Выполнение ЛБЗ World of Tanks<div id="down_triangle"></div></button>
+                                <div class="prices_desc">
+                                    <p>Личные боевые задачи 2.0 - 300 рублей</p>
+                                    <p>Личные боевые задачи 1.0 - 200 рублей</p>
+                                </div>
+                            <button type="button" class="prices">Аккаунты World of Tanks<div id="down_triangle"></div></button>
+                                <div class="prices_desc">
+                                    <p>Аккаунт под твинк - 2000 рублей</p>
+                                    <p>Аккаунт под твинк - 2000 рублей</p>
+                                </div>
+                            <button type="button" class="prices">Фарм серебра World of Tanks<div id="down_triangle"></div></button>
+                                <div class="prices_desc">
+                                    <p>Фарм серебра 1.000.000 - 100 рублей</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer_menu">
+                    <div class="footer_contacts">
+                        <h3>STAGER</h3>
+                    </div>
+                    <div class="footer_copyright">
+                        <h3>Desighned: Maksim Doromeichik</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var coll = document.getElementsByClassName("prices");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var prices_desc = this.nextElementSibling;
+                if (prices_desc.style.display === "block") {
+                    prices_desc.style.display = "none";
+                } else {
+                    prices_desc.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>
